@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+    z-index: 2;
+}
+
+.logo {
+    flex-grow: 0.25;
+}
+
+.nav-links {
+    flex-grow: 1;
+}
+
+.nav-links>li a::after,
+.nav-links>li.active a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    transition: 0.25s ease-in;
+    @apply bg-color-teal block absolute bottom-0 left-0;
+}
+
+.nav-links>li a:hover::after,
+.nav-links>li.active a::after {
+    width: 100%;
+}
+
+.nav-links>li.active::before {
+    content: "";
+    height: 0%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.25s ease-in;
+    animation: navLink 0.25s ease-in forwards;
+    @apply bg-atom-light-dark rounded block absolute top-0 left-0;
+}
+
+@keyframes navLink {
+    to {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.nav-links>li.active {
+    z-index: 1;
+}
+
+.auths {
+    @apply flex justify-center;
+    flex-grow: 0.25;
+}
+
+
+.header {
+    height: 100vh;
+}
+
+/* header */
+.header {
+    @apply bg-color-teal grid;
+    grid-template-columns: 1.25fr 0.75fr;
+}
+
+.header>.content {
+    filter: drop-shadow(10px 1px 3px rgba(0, 0, 0, 0.5));
+}
+
+.header>.content>article {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    @apply bg-atom-light-dark grid grid-rows-2 text-xl h-full w-full;
+    filter: drop-shadow(1px 5px 1px rgba(0, 0, 0, 0.5));
+}
+.header>.form>form>fieldset>legend {
+    width: 120%;
+    left: -10%;
+    top: 5px;
+    height: 3rem;
+    transform: rotate(-1deg);
+    @apply bg-atom-dark relative;
+}
+
+.header>.form>form>fieldset>legend::before{
+    content: "";
+    @apply w-2 block absolute top-0 left-0 h-full;
+    background-color: #565656;
+    transform-origin: top left;
+    transform: skewY(-50deg);
+    z-index: 1;
+}
+.header>.form>form>fieldset>legend::after{
+    content: "";
+    @apply w-2 block absolute top-0 right-0 h-full;
+    background-color: #565656;
+    transform-origin: bottom right;
+    transform: skewY(-50deg);
+    z-index: 1;
+}
+.header>.form>form>fieldset>legend>span{
+    z-index: 120000000; /*this freaking z-index wasn't working*/
+}
