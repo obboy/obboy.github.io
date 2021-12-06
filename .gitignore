@@ -5,3 +5,4 @@
 
 *.lock
 /drafts
+./README.md
