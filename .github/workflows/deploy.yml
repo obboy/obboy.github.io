@@ -32,6 +32,9 @@ jobs:
       - name: Build static js
         run: npm run build --if-present
 
+      - name: Copy file to build folder
+        run: cp CNAME build/
+
       - name: Deploy to GH Pages
         run: |
           git config --global user.email "sharifrafidurrahman@gmail.com"
