@@ -108,8 +108,8 @@ function Home() {
             <div className="hero__image__github__container">
               <img className='hero__image__github'
                 src='/assets/img/hero__aside__banner__image.svg'
-                alt=''/>
-                {/* .hero__image__github__container */}
+                alt='' />
+              {/* .hero__image__github__container */}
             </div>
             {/* .hero__menu__section */}
           </section>
