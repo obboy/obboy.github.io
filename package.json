@@ -7,6 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
+    "deploy": "gh-pages -b webpage -d build",
     "postbuild": "cp -a out/. ./build && touch ./build/.nojekyll"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "gh-pages": "^3.2.3"
   }
 }
