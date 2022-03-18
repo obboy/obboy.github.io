@@ -1,8 +1,12 @@
+import Head from "next/head"
 import { Component } from "react"
 
 function Home() {
   return (
     <>
+      <Head>
+        <title>Obboy</title>
+      </Head>
       <div className="global_container">
         {/* ? HEADER SECTION | START */}
         <div className="main_header__container">
