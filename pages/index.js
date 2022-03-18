@@ -55,7 +55,7 @@ function Home() {
                     import
                     <span className="hero__content__info__line__code--highlight"> Life </span>
                     from
-                    <span className="hero__content__info__line__code--highlight"> "Life"</span>;
+                    <span className="hero__content__info__line__code--highlight"> &quot;Life&quot;</span>;
                   </code>
                   {/* .hero__content__info__line__code */}
                 </span>
@@ -66,7 +66,7 @@ function Home() {
                     if
                     (<span className="hero__content__info__line__code--highlight">Life</span>
                     .status ==
-                    <span className="hero__content__info__line__code--highlight">"SAD"</span>)
+                    <span className="hero__content__info__line__code--highlight">&quot;SAD&quot;</span>)
                     {'{'}
                   </code>
                   {/* prettier-ignore-end */}
