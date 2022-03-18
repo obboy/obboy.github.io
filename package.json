@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "cp -a out/. ../build && touch ../build/.nojekyll"
+    "postbuild": "cp -a out/. ./build && touch ./build/.nojekyll"
   },
   "dependencies": {
     "next": "12.1.0",
