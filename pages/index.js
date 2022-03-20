@@ -12,7 +12,7 @@ function Home() {
         <div className="main_header__container">
           <header className="main_header">
             <a href="#" className="main_header__branding">
-              Obboy <span className="main_header__branding--highlight">.io</span>
+              Obboy <span className="main_header__branding--highlight">.org</span>
             </a>
             {/* .main_header__branding */}
             <nav className="main_header__navigation">
